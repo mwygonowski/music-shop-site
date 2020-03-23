@@ -1,0 +1,369 @@
+//--IMPORTS--//
+
+//@import "bootstrap-grid.css";
+////@import "bootstrap-grid.min.css";
+//@import "bootstrap-reboot.css";
+////@import "bootstrap-reboot.min.css";
+//@import "bootstrap.css";
+////@import "bootstrap.min.css";
+
+@import "reset";
+@import "grids";
+@import "contact";
+//--MIXINS--//
+
+//--GENERAL--//
+
++
+
+body{
+  font-family: 'Raleway', sans-serif, 'Comfortaa', cursive, "Lato";
+  font-size: 12px;
+  min-width: 240px;
+  max-width: 1200px;
+  height: 100%;
+  //color: #ffffff;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 15%, rgba(255,255,255,1) 100%);
+  margin: 0 auto;
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+
+.bckg{
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 49%, rgba(122,119,119,1) 100%);
+}
+
+.mainFrame{
+  min-width: 240px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Raleway', sans-serif, 'Comfortaa', cursive, "Lato";
+  height: 100%;
+  font-size: 12px;
+}
+//----HEADER---//
+
+
+
+.headerContainer{
+  width: 100%;
+  background-image: url("./../images/guitars1.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  .headerName{
+    font-size: 50px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-weight: bolder;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-decoration: none;
+    a{
+      color: #fffff1;
+      text-decoration: none;
+    }
+    #header{
+      color: #F37500;
+    }
+  }
+  .headerSearch{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    .searchTerm {
+      width: 464px;
+      border: 3px solid #FF7A00;
+      border-right: none;
+      //padding: 5px;
+      height: 36px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+
+    .searchTerm:focus{
+      color: #FF7A00;
+    }
+  }
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #FF7A00;
+    background: #FF7A00;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .headerNavigation{
+    padding: 20px;
+
+    .headerNavMenu{
+      display: flex;
+      justify-content: space-around;
+      background: rgba(0, 0, 0, 0.5);
+      margin-left: -20px;
+      margin-right: -20px;
+
+      //color: #FF9C40;
+      color: #FF7A00;
+      .headerLinks{
+        font-family: Raleway;
+        font-size: 25px;
+        font-weight: bold;
+        a{
+          color: #FF7A00;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 500ms ease-in-out;
+        }
+        a:hover{
+          color: #fffff1;
+          font-size: 50px;
+          -webkit-transition: all 500ms ease-in-out;
+          -moz-transition: all 500ms ease-in-out;
+          -ms-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
+        }
+      }
+    }
+  }
+
+}
+
+//--slider--//
+
+.bigSlider{
+
+  margin: auto;
+  height: 700px;
+  width: 1000px;
+  padding: 20px 20px;
+ img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   height: 50%;
+ }
+}
+
+//--MAIN CONTENT--//
+
+.main-content-highlight{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #ffffff;
+
+  .highlightHyperlink{
+    text-decoration: none;
+  }
+
+  .mc-highlight-element{
+    position: relative;
+    width:360px;
+    height: 200px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 40px;
+    transition: all 500ms ease-in-out;
+      a{
+        text-decoration: none;
+      }
+
+  }
+
+    .mc-highlight-element:hover{
+      overflow: hidden;
+      width:432px;
+      height:240px;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+
+    }
+
+
+  #highlight-featured{
+    text-shadow: 2px 2px #FF7A00;
+
+  }
+  #highlight-popular{
+    text-shadow: 2px 2px #FF7A00;
+    font-family: Comfortaa;
+  }
+  #highlight-discount{
+    font-size: 30px;
+    font-weight: bold;
+    strong{
+      color: #F37500;
+      text-shadow: none;
+      text-align: center;
+      font-size: 70px;
+      font-weight: bolder;
+    }
+  }
+
+
+
+
+  #highlight1{
+    background-image: url("./../images/cd.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+
+
+  }
+  #highlight2{
+    background-image: url("./../images/piano2.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #highlight3{
+    background-image: url("./../images/synth3.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: auto;
+  }
+}
+
+//Category Tab//
+
+.productsCategories{
+  .categoryList {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .categoryDiv{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Raleway;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 0 20px;
+    .categoryLink{
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+
+    }
+    .categoryLink:hover{
+       color: #FF7A00;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  .dropdown li{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+
+}
+
+
+
+footer{
+
+  .company-info-container{
+    #aboutUs{
+    background-color: white;
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Raleway;
+    padding: 25px;
+      p{
+        font-size: 14px;
+      }
+
+  }
+  }
+  .company-social-media-container{
+
+      .quickInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-bottom: 20px;
+        margin: auto;
+        max-width: 1200px;
+        font-family: Raleway;
+        background-color: #ffffff;
+        h2{
+          margin: 5px 20px;
+          font-size: 20px;
+        }
+        li{
+          cursor: pointer;
+          margin: 5px 20px;
+          font-size: 15px;
+        }
+      }
+
+      .social-media-list{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #ffffff;
+        max-width: 1200px;
+        margin: auto;
+        font-family: Raleway;
+        .social-text h3{
+          margin: 30px 20px ;
+          font-size: 18px;
+        }
+        .social-icon{
+          cursor: pointer;
+          margin: 0 20px;
+          padding: 20px 0;
+          font-size: 30px;
+
+          }
+        #icon-facebook{
+          color: #3b5998;
+        }
+        #icon-twitter{
+          color: #55acee;
+        }
+        #icon-mail{
+        color: darkred;
+      }
+      }
+    }
+  }
+  #copyright{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+

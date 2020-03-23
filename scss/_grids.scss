@@ -1,0 +1,59 @@
+@mixin grid-el{
+  height: 200px;
+  width: 200px;
+  border: solid 1px black;
+  a{
+    display: flex;
+    justify-content:center ;
+    margin-top: 45%;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+  }
+};
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "col1-row1 col2-row1 col3-row1 col4-row1" "col1-row2 col2-row2 col3-row2 col4-row2";
+}
+
+.col1-row1 { grid-area: col1-row1;
+  @include grid-el;
+}
+
+.col2-row1 { grid-area: col2-row1;
+  @include grid-el;
+}
+
+.col3-row1 { grid-area: col3-row1;
+  @include grid-el;
+}
+
+.col4-row1 { grid-area: col4-row1;
+  @include grid-el;
+}
+
+.col1-row2 { grid-area: col1-row2;
+  @include grid-el;
+}
+
+.col2-row2 { grid-area: col2-row2;
+  @include grid-el;
+}
+
+.col3-row2 { grid-area: col3-row2;
+  @include grid-el;
+}
+
+.col4-row2 { grid-area: col4-row2;
+  @include grid-el;
+}
